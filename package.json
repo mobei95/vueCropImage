@@ -1,7 +1,7 @@
 {
   "name": "vue-crop-image",
   "description": "vue项目使用的图片裁剪组件",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "阿白",
   "license": "MIT",
   "main": "dist/index.js",
@@ -11,6 +11,20 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mobei95/vueCropImage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mauricius/vue-draggable-resizable/issues"
+  },
+  "homepage": "https://github.com/mobei95/vueCropImage",
+  "keywords": [
+    "vue",
+    "crop",
+    "crop-img",
+    "vue-crop"
+  ],
   "dependencies": {
     "cropperjs": "^1.5.5",
     "vue": "^2.5.11"
