@@ -1,7 +1,7 @@
 {
   "name": "vue-crop-image",
-  "description": "vue项目使用的图片裁剪组件",
-  "version": "0.0.4",
+  "description": "一个基于VUE框架的图片裁剪组件",
+  "version": "0.0.8",
   "author": "阿白",
   "license": "MIT",
   "main": "dist/index.js",
@@ -22,8 +22,11 @@
   "keywords": [
     "vue",
     "crop",
+    "cropper",
+    "copperjs",
     "crop-img",
-    "vue-crop"
+    "vue-crop",
+    "vue-copper"
   ],
   "dependencies": {
     "cropperjs": "^1.5.5",

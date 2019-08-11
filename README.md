@@ -1,18 +1,42 @@
-# vue-crop
+# vue-crop-image
 
-> vue项目使用的图片裁剪组件
+> 一个基于VUE框架的图片裁剪组件
 
-## Build Setup
-
+## 安装
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+npm install --save vue-crop-image
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 使用
+```bash
+<template>
+  <vue-crop
+    :src="imgUrl"
+    :aspectRatio="16/9"
+    @copperImg="getImg">
+  </vue-crop>
+</template>
+<script>
+import vueCrop from 'vue-crop-image'
+export default {
+  components: {
+    vueCrop
+  }
+}
+</script>
+```
+
+## Options
+
+| Name           | Type     | Required | default  | Description                     |
+| -------------- | -------- | -------- | -------- | ------------------------------  |
+| src            | `string` | true     | --       | 需要裁剪的图片地址                |
+| aspectRatio    | `number` | --       | 1(1/1)   | 裁剪框的比例,默认为1:1            |
+
+## Event
+
+| Name           | Description      | Required | Callback Parameter              |
+| -------------- | ---------------  | -------- | ------------------------------  |
+| src            | 裁剪框发生变化    | true      | 裁剪后的图片(Base 64位)          |
+
+
