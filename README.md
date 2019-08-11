@@ -35,8 +35,8 @@ export default {
 
 ## Event
 
-| Name           | Description      | Required | Callback Parameter              |
-| -------------- | ---------------  | -------- | ------------------------------  |
-| src            | 裁剪框发生变化    | true      | 裁剪后的图片(Base 64位)          |
+| Name           | Description      | Callback Parameter              |
+| -------------- | ---------------  | ------------------------------  |
+| src            | 裁剪框发生变化    | 裁剪后的图片(Base 64位)          |
 
 
